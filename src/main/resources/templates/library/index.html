@@ -32,6 +32,7 @@
 								<tbody>
 									<tr th:each="library : ${libraries}" class="">
 										<td th:text="${library.id}">1</td>
+
 										<td th:text="${library.name}">Javascriptパターン　優れたアプリケーション</td>
 										<td th:switch="${library.userId}">
 											<form th:case="0" th:action="@{/library/borrow}" th:method="get">
